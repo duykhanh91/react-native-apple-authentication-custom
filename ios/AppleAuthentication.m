@@ -29,7 +29,7 @@ RCT_EXPORT_MODULE()
     @"UNKNOWN": @(ASUserDetectionStatusUnknown),
     @"UNSUPPORTED": @(ASUserDetectionStatusUnsupported),
   };
-  
+
   return @{
            @"Scope": scopes,
            @"Operation": operations,
@@ -51,15 +51,14 @@ RCT_EXPORT_METHOD(requestAsync:(NSDictionary *)options
 {
   _promiseResolve = resolve;
   _promiseReject = reject;
-  
+
   ASAuthorizationAppleIDProvider* appleIDProvider = [[ASAuthorizationAppleIDProvider alloc] init];
   ASAuthorizationAppleIDRequest* request = [appleIDProvider createRequest];
-  request.requestedScopes = options[@"requestedScopes"];
-     NSLog(@" khanhhd%@", options);
+  request.requestedScopes =  @[ASAuthorizationScopeFullName, ASAuthorizationScopeEmail];
   if (options[@"requestedOperation"]) {
     request.requestedOperation = options[@"requestedOperation"];
   }
-  
+
   ASAuthorizationController* ctrl = [[ASAuthorizationController alloc] initWithAuthorizationRequests:@[request]];
   ctrl.presentationContextProvider = self;
   ctrl.delegate = self;

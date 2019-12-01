@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/github_account/react-native-apple-authentication-custom"
   s.license      = "MIT"
   # s.license    = { :type => "MIT", :file => "FILE_LICENSE" }
-  s.authors      = { "systango-technologies" => "duykhanh1411@hotmail.com" }
+  s.authors      = { "systango-technologies" => "huynhduykhanh91@gmail.com" }
   s.platforms    = { :ios => "9.0", :tvos => "10.0" }
   s.source       = { :git => "https://github.com/github_account/react-native-apple-authentication-custom.git", :tag => "#{s.version}" }
 

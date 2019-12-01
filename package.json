@@ -1,7 +1,7 @@
 {
-  "name": "react-native-apple-authentication",
+  "name": "react-native-apple-authentication-custom",
   "title": "React Native Apple Authentication",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "react-native native module for Apple Login",
   "main": "index.js",
   "scripts": {
@@ -20,8 +20,8 @@
     "apple-authentication"
   ],
   "author": {
-    "name": "systango-technologies",
-    "email": "engineering@systango.com"
+    "name": "duykhanh91",
+    "email": "huynhduykhanh91@gmail.com"
   },
   "license": "MIT",
   "licenseFilename": "LICENSE",
