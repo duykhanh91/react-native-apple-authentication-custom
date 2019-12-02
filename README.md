@@ -1,4 +1,4 @@
-# react-native-apple-authentication
+# react-native-apple-authentication-custom
 This npm module is used for authentication using **Apple id** in **React Native** apps.
 Apple sign-in only works with IOS platform and the setup guide considers the same.
 
@@ -6,20 +6,20 @@ Apple sign-in only works with IOS platform and the setup guide consid
 
 To install the module, run the following command in your project directory:
 
-`$ npm install --save react-native-apple-authentication`
+`$ npm install --save react-native-apple-authentication-custom`
 
 ### Automatic Installation
 
 From react-native version 0.60 we don't need to link any third party module separately but if you found it has not been included with your project then you can run the following:
 
-`$ react-native link react-native-apple-authentication`
+`$ react-native link react-native-apple-authentication-custom`
 
 ### Manual Installation
 
 #### iOS
 
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-apple-authentication` and add `AppleSignIn.xcodeproj`
+2. Go to `node_modules` ➜ `react-native-apple-authentication-custom` and add `AppleSignIn.xcodeproj`
 3. In XCode, in the project navigator, select your project. Add `libAppleSignIn.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
 4. Run your project (`Cmd+R`)
 
@@ -39,7 +39,7 @@ From react-native version 0.60 we don't need to link any third party�
 ## Usage
 ```javascript
 
-import { SignInWithAppleButton } from 'react-native-apple-authentication'
+import { SignInWithAppleButton } from 'react-native-apple-authentication-custom'
 export default class App extends React.Component{
 
   render(){
